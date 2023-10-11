@@ -1,0 +1,317 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ebbd27;
+    color: #fff;
+    padding-inline: 20px;
+   
+ }
+ .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    padding: 0;
+    margin: 0;
+    }
+
+.menu li {
+    margin-inline: 20px;
+   
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    font-style: italic;
+}
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; 
+}
+.menu-logo{
+    display: flex;
+    /* align-items: left;  */
+}
+.logo {
+    width: 70px; 
+    height: 50px;
+    background-image: url('../src/logo_savora.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+   /*  margin-left: 100px; */
+    display: none;  
+}
+
+
+.menu img{
+    width: 100px;;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ebbd27;
+    list-style: none;
+    
+}
+.submenu a {
+    font-size: 15px;
+    
+}
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.dropdown:hover > a {
+    color: red;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.form2 input {
+    padding: 10px;
+    background-color: #e9dfaa;
+    border-radius: 30px; 
+    width: 100%;
+}
+
+button {
+    background: #e9dfaa;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    
+}
+
+button img {
+       width: 24px;
+    height: 24px;
+
+}
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    flex: 0 0 100%; 
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    background-color: beige;
+    text-align: center;
+    
+}
+
+.mostaza {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.titulo-rojo {
+     background-color: #e31d1a;
+     font-size: 20px;
+    padding: 20px 30px 5px 30px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    
+}
+.titulo-rojo a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Futura-pt', sans-serif;
+}
+
+.grid{
+    margin-top:  0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: red;
+    padding: 20px;
+    padding-left: 60px;
+    
+}
+.item img {
+    width: 60px;
+    height: auto;     
+  }
+
+  .modosavora{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 30px;
+    
+  }
+  .modosavora img{
+    width: 400px;
+    height: auto;
+  }
+
+  footer {
+    background-color: #082748; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px;
+    font-size: 70%; 
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+  
+  .navItem {
+    margin-right: 15px;
+    
+  }
+  .navItem:last-child {
+    margin-right: 0; 
+  }
+  
+  .navItem a {
+    color: #fff; 
+    text-decoration: none; 
+    
+  }
+  
+  .container p {
+    margin: 0;
+  }
+  
+  .container a {
+    color: #fff; 
+  }
+  @media (max-width: 900px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        
+    }
+    .item img {
+        width: 60px;
+        height: auto;
+        margin: 40px;
+      }
+}
+
+@media (max-width: 768px) {
+    
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    
+   
+    .menu-icon {
+        display: block; 
+        margin-right: 180px;
+        
+    }
+    .logo{
+        display: block; 
+        margin-right: 180px;
+        
+    }
+
+    .menu {
+        display: none; 
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        background-color:  #ebbd27;
+        padding: 10px 0;
+    }
+    .carousel {
+        position: relative;
+    }
+    
+    .carousel .slide {
+        position: relative;
+    }
+    form {
+        display: none; 
+        width: 100% ;
+        position:relative ;
+      
+    }
+
+    .menu.show-menu {
+        display: flex; 
+    }
+
+    .form2.show-menu {
+        display: flex;
+       
+    }
+    .menu li {
+        margin: 7px 0; 
+    }
+    .mostaza {
+        max-width: 200%; 
+        height: auto; 
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10px;
+               
+    }
+    .item img {
+        width: 30px;
+        height: auto;     
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
